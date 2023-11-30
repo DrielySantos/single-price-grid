@@ -1,0 +1,125 @@
+html{
+    font-size: 62.5%;
+    max-width: 1440px;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+    background-color: var(--light-gray);
+    gap: 4vh;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "advertisement advertisement"
+                         "advertisement_details__price advertisement_details__description";
+    width: max(510px, min(310px));
+    border-radius: 5px;
+}
+
+.advertisement{
+    grid-area: advertisement;
+    background-color: var(--white);
+    padding: 35px 20px 25px 30px ;
+    border-radius: 5px 5px 0 0;
+}
+
+.advertisement h2{
+    color: var(--cyan);
+    font-size: 2rem;
+}
+
+.advertisement .subtittle{
+    color: var( --bright-yellow);
+    padding: 18px 0 10px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.advertisement .text{
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--grayish-blue);
+    padding-bottom: 5px;
+}
+
+.advertisement_details__price{
+    grid-area: advertisement_details__price;
+    background-color: var(--cyan);
+    padding: 30px 0 15px 35px;
+    border-radius: 0 0 0 5px;
+}
+
+h3{
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+    padding-bottom: 15px;
+}
+
+.advertisement_details__price .sub-price{
+    display: flex;
+    gap: 8px;
+}
+
+.advertisement_details__price h4{
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+.advertisement_details__price .accent{
+    font-size: 1.2rem;
+    padding-top: 7px;
+    color: var(--light-gray);
+    font-weight: 400;
+}
+
+.advertisement_details__price .sub-text{
+    font-size: 1.2rem;
+    padding: 9px 0;
+    color: var(--light-gray);
+    font-weight: 400;
+}
+
+form{
+    padding: 15px 0;
+}
+
+form .btn{
+    width: 27vh;
+    height: 6vh;
+    background-color: var(--bright-yellow);
+    border: none;
+    color: var(--white);
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+form .btn:hover{
+    color: var(--light-cyan);
+}
+
+.advertisement_details__description 
+.text-description{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--light-gray);
+}
+
+.advertisement_details__description{
+    grid-area: advertisement_details__description;
+    background-color: var(--light-cyan);
+    padding: 30px;
+    border-radius: 0 0 5px 0;
+}
+
+
