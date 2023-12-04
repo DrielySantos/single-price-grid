@@ -13,6 +13,10 @@
         border-radius: 0;
     }
 
+    body form .btn{
+        width: 100%;
+
+    }
     body .advertisement_details__description{
         border-radius: 0 0 5px 5px;
     }

@@ -19,8 +19,8 @@ body{
     display: grid;
     grid-template-areas: "advertisement advertisement"
                          "advertisement_details__price advertisement_details__description";
+    grid-template-columns: 1fr 1fr;
     width: max(510px, min(310px));
-    border-radius: 5px;
 }
 
 .advertisement{
@@ -52,7 +52,7 @@ body{
 .advertisement_details__price{
     grid-area: advertisement_details__price;
     background-color: var(--cyan);
-    padding: 30px 0 15px 35px;
+    padding: 30px;
     border-radius: 0 0 0 5px;
 }
 
@@ -66,7 +66,7 @@ h3{
 
 .advertisement_details__price .sub-price{
     display: flex;
-    gap: 8px;
+    gap: 2vh;
 }
 
 .advertisement_details__price h4{
@@ -76,7 +76,7 @@ h3{
 
 .advertisement_details__price .accent{
     font-size: 1.2rem;
-    padding-top: 7px;
+    padding-top: 1vh;
     color: var(--light-gray);
     font-weight: 400;
 }
